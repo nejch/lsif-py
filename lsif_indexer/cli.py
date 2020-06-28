@@ -21,7 +21,7 @@ def parse_args():
     parser.add_argument('-o', help='change the output file, "data.lsif" by default', default='data.lsif')
     parser.add_argument('-v', '--verbose', action='store_true', help='Output verbose logs', default=False)
     parser.add_argument('--exclude-content', action='store_true', help='Do not emit document content', default=False)
-    parser.add_argument('--version', action='version', version='Go LSIF indexer: {}, Protocol version: {}'.format(
+    parser.add_argument('--version', action='version', version='Python LSIF indexer: {}, Protocol version: {}'.format(
         INDEXER_VERSION,
         PROTOCOL_VERSION,
     ))

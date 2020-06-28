@@ -29,16 +29,16 @@ Verbose logging can be enabled with `-v`. The dump file is `data.lsif` by defaul
 The indexer requires Python 3.x. To install dependencies, run:
 
 ```shell
-pip install -r requirements.txt
+pip install git+https://github.com/sourcegraph/lsif-py.git
 ```
 
-If you don't want to install dependencies globally, use `virtualenv`:
+If you don't want to install lsif-py globally, use `virtualenv`:
 
 ```shell
-$ virtualenv venv
+$ python -m venv
 $ source venv/bin/activate
-(venv) $ pip install -r requirements.txt
-(venv) $ ./lsif-py lsif_indexer
+(venv) $ pip install git+https://github.com/sourcegraph/lsif-py.git
+(venv) $ lsif-py lsif_indexer
 # ...
 (venv) $ deactivate
 $
